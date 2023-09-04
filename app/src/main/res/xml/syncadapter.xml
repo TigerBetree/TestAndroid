@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sync-adapter
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="com.tiger.test.SyncAdapter.account"
+    android:allowParallelSyncs="false"
+    android:contentAuthority="com.tiger.test.SyncAdapter"
+    android:isAlwaysSyncable="true"
+    android:supportsUploading="false"
+    android:userVisible="true"/>

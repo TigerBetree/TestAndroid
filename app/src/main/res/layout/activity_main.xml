@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tiger.test.MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="@string/app_name"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start Flutter"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/tv"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/todolist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TodoList"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/start"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/flowers_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FlowersList-RecyclerViewSample"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/todolist"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/word_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WordList-ViewModule-LiveData-Sample"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/flowers_list"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/touch_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Touch_Event"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/word_list"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
