@@ -1,6 +1,7 @@
 package com.tiger.test
 
 import android.app.Application
+import android.util.Log
 import com.github.gzuliyujiang.oaid.DeviceIdentifier
 import com.jakewharton.processphoenix.ProcessPhoenix
 import com.tiger.test.roomwordssample.WordRepository
@@ -8,7 +9,10 @@ import com.tiger.test.roomwordssample.WordRoomDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 
-class App : Application() {
+
+public class App : Application() {
+
+    val TAG = "Tiger"
 
     val applicationScope = CoroutineScope(SupervisorJob())
 

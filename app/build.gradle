@@ -41,6 +41,10 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    dataBinding {
+        enabled true
+    }
+
     lintOptions {
         checkReleaseBuilds false
         abortOnError false
@@ -87,6 +91,17 @@ dependencies {
         exclude group: 'com.huawei.hms', module: 'ads-identifier'
     }
 
+
+    // eventbus
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    // okhttp [start]
+    implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.14.9'
+    // okhttp [end]
+
+
+    // ---------------------------------------------------------------------------------------------
     // Test
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test:runner:1.5.2'

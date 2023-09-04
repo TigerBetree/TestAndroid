@@ -1,4 +1,4 @@
-package com.tiger.test;
+package com.tiger.test.other;
 
 import android.Manifest;
 import android.app.Activity;
@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 
 import com.jakewharton.processphoenix.ProcessPhoenix;
+import com.tiger.test.R;
 
 public class TestTouchEventActivity extends Activity {
     @Override

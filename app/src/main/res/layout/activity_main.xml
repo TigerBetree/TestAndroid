@@ -65,4 +65,22 @@
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@+id/word_list"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/fragment_eventbus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment_Eventbus"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/touch_event"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/okhttp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OkHttp"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_eventbus"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

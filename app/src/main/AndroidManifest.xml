@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" /> <!-- Required because we're manually creating a new account. -->
     <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- 定位所需要权限 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -28,12 +29,13 @@
 
         <meta-data
             android:name="design_width_in_dp"
-            android:value="360"/>
+            android:value="360" />
         <meta-data
             android:name="design_height_in_dp"
-            android:value="640"/>
+            android:value="640" />
 
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,11 +43,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<!--        <activity-->
-<!--            android:name="io.flutter.embedding.android.FlutterActivity"-->
-<!--            android:hardwareAccelerated="true"-->
-<!--            android:theme="@style/MyTheme"-->
-<!--            android:windowSoftInputMode="adjustResize" />-->
+        <!--        <activity-->
+        <!--            android:name="io.flutter.embedding.android.FlutterActivity"-->
+        <!--            android:hardwareAccelerated="true"-->
+        <!--            android:theme="@style/MyTheme"-->
+        <!--            android:windowSoftInputMode="adjustResize" />-->
         <activity
             android:name=".todolist.TodoListActivity"
             android:theme="@style/MyTheme" />
@@ -65,7 +67,13 @@
             android:name=".roomwordssample.NewWordActivity"
             android:theme="@style/MyTheme" />
         <activity
-            android:name=".TestTouchEventActivity"
+            android:name=".other.TestTouchEventActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.tiger.test.frag.TestFragmentActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.tiger.test.okhttp.TestOkHttpActivity"
             android:theme="@style/MyTheme" />
     </application>
 

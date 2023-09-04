@@ -4,6 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.FragmentActivity
+import com.tiger.test.frag.TestFragmentActivity
+import com.tiger.test.okhttp.TestOkHttpActivity
+import com.tiger.test.other.TestTouchEventActivity
 import com.tiger.test.recyclersample.FlowersListActivity
 import com.tiger.test.roomwordssample.WordMainActivity
 import com.tiger.test.todolist.TodoListActivity
@@ -33,6 +36,14 @@ class MainActivity : FragmentActivity() {
 
         findViewById<View>(R.id.touch_event).setOnClickListener {
             startActivity(Intent(this@MainActivity, TestTouchEventActivity::class.java));
+        }
+
+        findViewById<View>(R.id.fragment_eventbus).setOnClickListener {
+            startActivity(Intent(this@MainActivity, TestFragmentActivity::class.java));
+        }
+
+        findViewById<View>(R.id.okhttp).setOnClickListener {
+            startActivity(Intent(this@MainActivity, TestOkHttpActivity::class.java));
         }
 
         DeviceUtil.getDeviceIds(this);
