@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tiger.test.coordinatorlayout2.NestedScrollCoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapse_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="148dp"
+                android:layout_marginBottom="100dp"
+                android:gravity="center"
+                android:text="StoryFragment"
+                android:textSize="30sp" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:tag="sticky"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabBackground="@color/transparent"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="1dp"
+            app:tabMinWidth="76dp"
+            app:tabMode="scrollable"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            app:tabRippleColor="@color/transparent"
+            app:tabSelectedTextColor="@color/color_brand"
+            app:tabTextColor="@color/color_bg_level1" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</com.tiger.test.coordinatorlayout2.NestedScrollCoordinatorLayout>

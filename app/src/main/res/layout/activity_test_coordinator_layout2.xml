@@ -40,6 +40,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -64,8 +65,8 @@
                         app:tabIndicatorHeight="1dp"
                         app:tabMinWidth="76dp"
                         app:tabMode="scrollable"
-                        app:tabRippleColor="@color/transparent"
                         app:tabTextAppearance="@style/TabLayoutTextStyle"
+                        app:tabRippleColor="@color/transparent"
                         app:tabSelectedTextColor="@color/color_brand"
                         app:tabTextColor="@color/color_bg_level1" />
 
@@ -83,8 +84,8 @@
                         app:tabGravity="center"
                         app:tabIndicatorHeight="1dp"
                         app:tabMinWidth="76dp"
-                        app:tabTextAppearance="@style/TabLayoutTextStyle"
                         app:tabMode="scrollable"
+                        app:tabTextAppearance="@style/TabLayoutTextStyle"
                         app:tabRippleColor="@color/transparent"
                         app:tabSelectedTextColor="@color/color_brand"
                         app:tabTextColor="@color/color_bg_level1" />

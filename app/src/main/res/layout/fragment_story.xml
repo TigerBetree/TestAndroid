@@ -22,7 +22,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="156dp"
+                android:layout_marginTop="148dp"
                 android:layout_marginBottom="100dp"
                 android:gravity="center"
                 android:text="StoryFragment"
@@ -31,7 +31,7 @@
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabLayout"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="48dp"
                 android:tag="sticky"
                 android:textAllCaps="false"
                 android:textSize="15sp"
@@ -43,6 +43,7 @@
                 app:tabIndicatorHeight="1dp"
                 app:tabMinWidth="76dp"
                 app:tabMode="scrollable"
+                app:tabTextAppearance="@style/TabLayoutTextStyle"
                 app:tabRippleColor="@color/transparent"
                 app:tabSelectedTextColor="@color/color_brand"
                 app:tabTextColor="@color/color_bg_level1" />

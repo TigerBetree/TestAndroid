@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.FragmentActivity
 import com.tiger.test.coordinatorlayout.TestCoordinatorLayoutActivity
+import com.tiger.test.coordinatorlayout2.TestCoordinatorLayoutActivity2
+import com.tiger.test.coordinatorlayout2.TestCoordinatorLayoutActivity3
 import com.tiger.test.frag.TestFragmentActivity
 import com.tiger.test.okhttp.TestOkHttpActivity
 import com.tiger.test.other.TestTouchEventActivity
@@ -49,6 +51,10 @@ class MainActivity : FragmentActivity() {
 
         findViewById<View>(R.id.coordinator_layout).setOnClickListener {
             startActivity(Intent(this@MainActivity, TestCoordinatorLayoutActivity::class.java));
+        }
+
+        findViewById<View>(R.id.coordinator_layout2).setOnClickListener {
+            startActivity(Intent(this@MainActivity, TestCoordinatorLayoutActivity2::class.java));
         }
 
         DeviceUtil.getDeviceIds(this);

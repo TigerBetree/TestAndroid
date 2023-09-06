@@ -12,4 +12,6 @@
     <color name="color_text_level2">#A19BB1</color>
     <color name="color_member">#FBDDB6</color>
     <color name="color_brand">#EB1450</color>
+
+    <color name="xui_config_color_white">#FFFFFF</color>
 </resources>
