@@ -26,6 +26,7 @@ public class TestCLStoryFragment2 extends BaseFragment implements View.OnClickLi
     private TabLayout tabLayout;
     private TestCLAStorydapter2 clAdapter;
     private AppBarLayout appBarLayout;
+    private NestedScrollCoordinatorLayout rootView;
 
     @Nullable
     @Override
@@ -60,6 +61,22 @@ public class TestCLStoryFragment2 extends BaseFragment implements View.OnClickLi
             } else {
                 if (getMActivity() != null) {
                     getMActivity().showTabLayout2(false);
+                }
+            }
+        });
+
+        appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
+            @Override
+            public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+                LogUtil.logd("onOffsetChanged : " + verticalOffset);
+                if (verticalOffset == 0) {
+                    if (getMActivity() != null) {
+                        getMActivity().setAllowUsrDragging(true);
+                    }
+                } else if (Math.abs(verticalOffset) >= appBarLayout.getTotalScrollRange()) {
+                    if (getMActivity() != null) {
+                        getMActivity().setAllowUsrDragging(false);
+                    }
                 }
             }
         });

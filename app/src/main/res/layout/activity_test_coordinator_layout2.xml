@@ -30,8 +30,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:behavior_hideable="true"
-                app:behavior_skipCollapsed="true">
-                <!--app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"-->
+                app:behavior_skipCollapsed="true"
+                app:layout_behavior="com.tiger.test.coordinatorlayout2.LockableBottomSheetBehavior">
 
                 <com.tiger.test.coordinatorlayout.NRViewpager
                     android:id="@+id/viewpager"

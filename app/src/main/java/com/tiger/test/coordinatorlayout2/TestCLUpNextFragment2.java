@@ -23,6 +23,7 @@ public class TestCLUpNextFragment2 extends BaseFragment implements View.OnClickL
 
     private View layoutView;
     private RecyclerView recyclerView;
+    private LinearLayoutManager linearLayoutManager;
 
     @Nullable
     @Override
@@ -41,7 +42,8 @@ public class TestCLUpNextFragment2 extends BaseFragment implements View.OnClickL
 
     private void init() {
         recyclerView = layoutView.findViewById(R.id.rc_list);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        linearLayoutManager = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(linearLayoutManager);
         String[] datas = new String[50];
         for (int i = 0; i < 50; i++) {
             datas[i] = "Story_" + (i + 1);
@@ -49,7 +51,6 @@ public class TestCLUpNextFragment2 extends BaseFragment implements View.OnClickL
         MyAdapter myAdapter = new MyAdapter(datas);
         recyclerView.setAdapter(myAdapter);
     }
-
     @Override
     public void onClick(View v) {
     }
