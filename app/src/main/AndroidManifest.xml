@@ -75,6 +75,9 @@
         <activity
             android:name="com.tiger.test.okhttp.TestOkHttpActivity"
             android:theme="@style/MyTheme" />
+        <activity
+            android:name=".coordinatorlayout.TestCoordinatorLayoutActivity"
+            android:theme="@style/MyTheme" />
     </application>
 
 </manifest>

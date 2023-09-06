@@ -83,4 +83,13 @@
         android:textAllCaps="false"
         app:layout_constraintTop_toBottomOf="@+id/fragment_eventbus"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coordinator_Layout"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/okhttp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

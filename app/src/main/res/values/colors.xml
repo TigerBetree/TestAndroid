@@ -5,4 +5,11 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="buttonLabel">#FFFFFF</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="color_bg_level1">#16053D</color>
+    <color name="color_text_level1">#E2E0E7</color>
+    <color name="color_text_level2">#A19BB1</color>
+    <color name="color_member">#FBDDB6</color>
+    <color name="color_brand">#EB1450</color>
 </resources>
