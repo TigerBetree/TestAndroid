@@ -12,6 +12,7 @@ import com.tiger.test.okhttp.TestOkHttpActivity
 import com.tiger.test.other.TestTouchEventActivity
 import com.tiger.test.recyclersample.FlowersListActivity
 import com.tiger.test.roomwordssample.WordMainActivity
+import com.tiger.test.stickyheader.TestStickyHeaderLayoutActivity
 import com.tiger.test.todolist.TodoListActivity
 import com.tiger.test.utils.DeviceUtil
 
@@ -55,6 +56,10 @@ class MainActivity : FragmentActivity() {
 
         findViewById<View>(R.id.coordinator_layout2).setOnClickListener {
             startActivity(Intent(this@MainActivity, TestCoordinatorLayoutActivity2::class.java));
+        }
+
+        findViewById<View>(R.id.sticky_header).setOnClickListener {
+            startActivity(Intent(this@MainActivity, TestStickyHeaderLayoutActivity::class.java));
         }
 
         DeviceUtil.getDeviceIds(this);

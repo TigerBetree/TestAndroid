@@ -84,6 +84,9 @@
         <activity
             android:name=".coordinatorlayout2.TestCoordinatorLayoutActivity3"
             android:theme="@style/MyTheme" />
+        <activity
+            android:name=".stickyheader.TestStickyHeaderLayoutActivity"
+            android:theme="@style/MyTheme" />
     </application>
 
 </manifest>
