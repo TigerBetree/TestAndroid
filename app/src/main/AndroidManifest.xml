@@ -87,6 +87,19 @@
         <activity
             android:name=".stickyheader.TestStickyHeaderLayoutActivity"
             android:theme="@style/MyTheme" />
+        <activity
+            android:name=".gallery.GalleryActivity"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".gallery.ViewPagerAct"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".gallery.GalleryAct"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name=".gallery2.RecyclerGalleryActivity"
+            android:theme="@style/MyTheme" />
+
     </application>
 
 </manifest>

@@ -8,6 +8,8 @@ import com.tiger.test.coordinatorlayout.TestCoordinatorLayoutActivity
 import com.tiger.test.coordinatorlayout2.TestCoordinatorLayoutActivity2
 import com.tiger.test.coordinatorlayout2.TestCoordinatorLayoutActivity3
 import com.tiger.test.frag.TestFragmentActivity
+import com.tiger.test.gallery.GalleryActivity
+import com.tiger.test.gallery2.RecyclerGalleryActivity
 import com.tiger.test.okhttp.TestOkHttpActivity
 import com.tiger.test.other.TestTouchEventActivity
 import com.tiger.test.recyclersample.FlowersListActivity
@@ -61,7 +63,9 @@ class MainActivity : FragmentActivity() {
         findViewById<View>(R.id.sticky_header).setOnClickListener {
             startActivity(Intent(this@MainActivity, TestStickyHeaderLayoutActivity::class.java));
         }
-
+        findViewById<View>(R.id.gallery).setOnClickListener {
+            startActivity(Intent(this@MainActivity, RecyclerGalleryActivity::class.java));
+        }
         DeviceUtil.getDeviceIds(this);
     }
 }

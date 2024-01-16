@@ -43,7 +43,7 @@ public class StickyHeaderLayout extends FrameLayout {
     public static final int TYPE_STICKY_LAYOUT = 1001;
 
     private boolean showStickLayout;
-    private int showStickItemPosition;
+    private int showStickItemPosition = -1;
 
     private RecyclerView.ViewHolder stickyItemHolder;
     private OnStickItemStateChangeListener onStickItemStateChangeListener;
@@ -142,7 +142,7 @@ public class StickyHeaderLayout extends FrameLayout {
                     onStickItemStateChangeListener.onStickItemStateChanged(stickyItemHolder, false);
                 }
 //                LogUtils.d("updateStickyView: --------------------gone");
-            } else if (!showStickLayout && dy >= 0 && firstVisibleItemPosition >= showStickItemPosition) {
+            } else if (!showStickLayout && dy >= 0 && firstVisibleItemPosition >= showStickItemPosition && showStickItemPosition >= 0) {
                 showStickLayout = true;
                 mStickyLayout.setVisibility(VISIBLE);
 //                LogUtils.d("updateStickyView: --------------------visible");

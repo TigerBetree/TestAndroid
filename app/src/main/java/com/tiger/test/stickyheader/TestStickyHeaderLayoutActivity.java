@@ -27,6 +27,7 @@ public class TestStickyHeaderLayoutActivity extends AppCompatActivity {
         recycler = findViewById(R.id.recycler);
 
         layout.setShowStickItemPosition(5);
+
         layout.setOnStickItemStateChangeListener(new StickyHeaderLayout.OnStickItemStateChangeListener() {
             @Override
             public void onStickItemStateChanged(RecyclerView.ViewHolder holder, boolean visible) {
