@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tiger.test.dragview.DraggableViewGroup
+        android:id="@+id/draggable_view_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/draggable_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drag me!"
+            android:textColor="@color/color_brand" />
+
+    </com.tiger.test.dragview.DraggableViewGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

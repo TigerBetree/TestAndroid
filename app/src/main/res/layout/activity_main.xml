@@ -7,113 +7,140 @@
     android:layout_height="match_parent"
     tools:context="com.tiger.test.MainActivity">
 
-    <TextView
-        android:id="@+id/tv"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:gravity="center_horizontal"
-        android:padding="5dp"
-        android:text="@string/app_name"
-        android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="30sp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/start"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="start Flutter"
-        android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@+id/tv"
-        tools:ignore="MissingConstraints" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/todolist"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TodoList"
-        android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@+id/start"
-        tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="@string/app_name"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="30sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/flowers_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="FlowersList-RecyclerViewSample"
-        android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@+id/todolist"
-        tools:ignore="MissingConstraints" />
+            <Button
+                android:id="@+id/start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="start Flutter"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/tv"
+                tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/word_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="WordList-ViewModule-LiveData-Sample"
-        android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@+id/flowers_list"
-        tools:ignore="MissingConstraints" />
+            <Button
+                android:id="@+id/todolist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TodoList"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/start"
+                tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/touch_event"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Touch_Event"
-        android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@+id/word_list"
-        tools:ignore="MissingConstraints" />
+            <Button
+                android:id="@+id/flowers_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FlowersList-RecyclerViewSample"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/todolist"
+                tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/fragment_eventbus"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Fragment_Eventbus"
-        android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@+id/touch_event"
-        tools:ignore="MissingConstraints" />
+            <Button
+                android:id="@+id/word_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WordList-ViewModule-LiveData-Sample"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/flowers_list"
+                tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/okhttp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="OkHttp"
-        android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@+id/fragment_eventbus"
-        tools:ignore="MissingConstraints" />
+            <Button
+                android:id="@+id/touch_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Touch_Event"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/word_list"
+                tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/coordinator_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Coordinator_Layout"
-        android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@+id/okhttp"
-        tools:ignore="MissingConstraints" />
-    <Button
-        android:id="@+id/coordinator_layout2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Coordinator_Layout2"
-        android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@+id/coordinator_layout"
-        tools:ignore="MissingConstraints" />
-    <Button
-        android:id="@+id/sticky_header"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="sticky header"
-        android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@+id/coordinator_layout"
-        tools:ignore="MissingConstraints" />
-    <Button
-        android:id="@+id/gallery"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="gallery"
-        android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@+id/sticky_header"
-        tools:ignore="MissingConstraints" />
+            <Button
+                android:id="@+id/fragment_eventbus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fragment_Eventbus"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/touch_event"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/okhttp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OkHttp"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_eventbus"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/coordinator_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coordinator_Layout"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/okhttp"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/coordinator_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Coordinator_Layout2"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/coordinator_layout"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/sticky_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="sticky header"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/coordinator_layout"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="gallery"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/sticky_header"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/dragview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dragview"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/sticky_header"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

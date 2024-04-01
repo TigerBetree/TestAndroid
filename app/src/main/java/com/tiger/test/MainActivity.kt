@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentActivity
 import com.tiger.test.coordinatorlayout.TestCoordinatorLayoutActivity
 import com.tiger.test.coordinatorlayout2.TestCoordinatorLayoutActivity2
 import com.tiger.test.coordinatorlayout2.TestCoordinatorLayoutActivity3
+import com.tiger.test.dragview.DragViewActivity
 import com.tiger.test.frag.TestFragmentActivity
 import com.tiger.test.gallery.GalleryActivity
 import com.tiger.test.gallery2.RecyclerGalleryActivity
@@ -66,6 +67,10 @@ class MainActivity : FragmentActivity() {
         findViewById<View>(R.id.gallery).setOnClickListener {
             startActivity(Intent(this@MainActivity, RecyclerGalleryActivity::class.java));
         }
+        findViewById<View>(R.id.dragview).setOnClickListener {
+            startActivity(Intent(this@MainActivity, DragViewActivity::class.java));
+        }
+
         DeviceUtil.getDeviceIds(this);
     }
 }
